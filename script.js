@@ -1,5 +1,4 @@
-
-  let com;
+let com;
 for(var i=0;i<3;i++){
   document.querySelectorAll(".btn")[i].addEventListener("click",function(){
      com = this.innerHTML;
@@ -179,6 +178,7 @@ else{
 //   console.log("Game tie");
 // }
 // }
+
 
 
 
