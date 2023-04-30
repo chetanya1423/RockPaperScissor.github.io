@@ -54,9 +54,10 @@ function clickButton(classValue){
 function computerCall(pressHoldBtn){
   console.log(com)
 console.log(randomNum);
+
+var activeButton = document.querySelector(`.a${pressHoldBtn}`);
 var sound1 = document.getElementById("myAudio");
   sound1.play();
-var activeButton = document.querySelector(`.a${pressHoldBtn}`);
 activeButton.classList.add("pressed");
 setTimeout(function() {
   activeButton.classList.remove("pressed");
