@@ -34,6 +34,8 @@ function pressedBtn(){
 let randomNum;
 function clickButton(classValue){
   var activeButton = document.querySelector(`.a${classValue}`);
+  var sound = document.getElementById("myAudio");
+  sound.play();
   activeButton.classList.add("pressed");
   setTimeout(function() {
     activeButton.classList.remove("pressed");
@@ -43,7 +45,7 @@ function clickButton(classValue){
    
    setTimeout(function(){
     computerCall(randomNum);
-   },5000);
+   },3000);
 }
 
 
@@ -70,9 +72,10 @@ document.querySelector(".tie-head").innerHTML="Player Turn."
 
 
 // condition check for win this game
-function startGame(com,randomNum){
 let playerSum=0;
 let computerSum=0;
+function startGame(com,randomNum){
+
 
   var rock=0;
   var paper=1;
@@ -144,17 +147,9 @@ else if(scissor==com && paper==randomNum){
   }, 1000);
   //executeGame(2,1)
 }
-else if(com==0 &&randomNum==0){
-  console.log("Game Tie.")
-  document.querySelector(".tie-head").innerHTML="Game tie please click the button for restart the Game.";
-}
-else if(com==1 &&randomNum==1){
-  console.log("Game Tie.")
-  document.querySelector(".tie-head").innerHTML="Game tie please click the button for restart the Game.";
-}
-else if(com==2 &&randomNum==2){
-  console.log("Game Tie.")
-  document.querySelector(".tie-head").innerHTML="Game tie please click the button for restart the Game.";
+else{
+  console.log("Game tie.");
+  document.querySelector(".win-ses").innerHTML="Game tie. Please click the button to restart the Game."
 }
 }
 
