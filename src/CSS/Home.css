@@ -1,0 +1,9 @@
+.home{
+    /* background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%); */
+    background-color: #1b2745;
+    background-image: url('../assets/Img/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

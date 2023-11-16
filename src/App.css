@@ -1,0 +1,56 @@
+@keyframes running-border {
+    0% {
+        border-color: blue;
+        color: blue;
+      }
+      25% {
+        border-color: red;
+        color: red;
+      }
+      50% {
+        border-color: yellow;
+        color: yellow;
+      }
+      75% {
+        border-color: green;
+        color: green;
+      }
+      100% {
+        border-color: blue;
+        color: blue;
+      }
+  }
+
+  .animated-running-border {
+    animation: running-border 2s linear infinite;
+  }
+
+  @keyframes running-text {
+    0% {
+        border-color: blue;
+        color: blue;
+      }
+      25% {
+        border-color: green;
+        color: green;
+      }
+      50% {
+        border-color: yellow;
+        color: yellow;
+      }
+      75% {
+        
+        border-color: red;
+        color: red;
+      }
+      100% {
+      
+        border-color: blue;
+        color: blue;
+      }
+  }
+
+  .animated-running-text {
+    animation: running-text 2s linear infinite;
+  }
+
